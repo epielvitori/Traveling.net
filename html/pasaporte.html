@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saca tu pasaporte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    <header>
+     <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Traveling</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Viaja con nosotros</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pasaporte.html">Pasaporte</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./inSesion.html">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Paquetes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="./paquetes.html">Vuelos</a></li>
+                    <li><a class="dropdown-item" href="./paquetes.html">Hoteles</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header> <br><br><br>
+    <section >
+        <h1 class="pasaporte__titulo">Saca tu pasaporte con nostros</h1>
+      <div class="pasaporte">
+        <img class="pasaporte__imgPasaporte box1" src="../assets/pasaporte.jpg" alt="imgPasaporte">
+        <form class="pasaporte__formPasaporte box2">
+            <fieldset>
+                <legend>Datos personales</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id= "name"><br> <br>
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" id= "lastname"><br> <br>
+                    <label for="number">Numero de contacto:</label>
+                    <input type="text" id= "number"><br> <br>
+                    <label for="genero">Genero</label>
+                    <select name="genero" id="genero">
+                    <option value="masculino">masculino</option>
+                    <option value="femenino">femenino</option>
+                    <option value="prefiero no aclarar">prefiero no aclarar</option></select><br><br>
+                     <legend>Nacionalidad Argentina</legend>
+                        <input type="radio" name= "Nacionalidad Argentina" value="si">
+                        <label for="si">si</label>
+                        <input type="radio" name="Nacionalidad Argentina" value="no">
+                        <label for="no">no</label><br><br>
+                     <label for="dni">Numero de DNI</label>
+                     <input type="text" id= dni> <br><br>
+             <input type="checkbox" name="acepta" value="1">
+             <label id="cond" for="acepta">Acepta terminos y condiciones</label>       
+            
+            
+            </fieldset>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpiar">
+            <input type="button" value="guardar para despues">
+        </form><br><br>
+      </div>  
+
+    </section>
+
+    <footer class="footer" >
+        <div class="footer__caja">
+            <img class="footer__img" src="../assets/facebook.png" alt="">
+            
+            </div>
+          <div class="footer__caja">
+            <img class="footer__img" src="../assets/instagram.png" alt="">
+            
+           </div>
+          <div class="footer__caja">
+            <img class="footer__img" src="../assets/youtube.png" alt="">
+            
+           </div>
+      
+     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</body>
+</html>

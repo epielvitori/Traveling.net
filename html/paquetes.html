@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELeji tu destino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Traveling</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Viaja con nosotros</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pasaporte.html">Pasaporte</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./inSesion.html">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Paquetes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="./paquetes.html">Vuelos</a></li>
+                    <li><a class="dropdown-item" href="./paquetes.html">Hoteles</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>    
+    <section class="paquetes">
+        <h1>PAQUETES</h1>
+        <table class="tablaPaquetes">
+            <tr>
+            <th class=tablaPaquetes__nombre>DESTINO</th>
+            <th class=tablaPaquetes__nombre>PAQUETE</th>
+            <th class=tablaPaquetes__nombre>PRECIO</th>
+            </tr>
+            <tr>
+            <td class="tablaPaquetes__lugar">Playas del carmen</td>
+            <td class="tablaPaquetes__info"><ul>
+                <li>Alojamiento 6 noches</li>
+                <li>All inclusive</li>
+                <li>traslados aeropuerto - hotel</li>
+            </ul></td>
+            <td class="tablaPaquetes__info">$350000</td>
+            </tr>
+            <tr>
+            <td class="tablaPaquetes__lugar">Cuba</td>
+            <td class="tablaPaquetes__info"><ul>
+                <li>Alojamiento 7 noches</li>
+                <li>Desayuno incluido</li>
+                <li>traslados aeropuerto - hotel</li>
+            </ul></td>
+            <td class="tablaPaquetes__info">$470000</td>
+            </tr>
+            <tr>
+            <td class="tablaPaquetes__lugar">Rio de Janeiro</td>
+            <td class="tablaPaquetes__info"><ul>
+                <li>Alojamiento 3 noches</li>
+                <li>Traslado aeropuerto - hotel </li>
+                <li>vuelta en crucero all inclusive</li>
+            </ul></td>
+            <td class="tablaPaquetes__info">400000</td>
+            </tr>
+        </table>
+        <div>
+          <H2>Lo mas buscado</H2>
+          <div class="promos">
+            <div class="card promo1" style="width: 18rem;">
+              <img src="../assets/playaMex.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Playa del Carmen</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">All inclusice</li>
+                <li class="list-group-item">Salidas todo el mes </li>
+                <li class="list-group-item">$350000</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Comprar</a>
+                <a href="#" class="card-link">Reservar</a>
+              </div>
+            </div>
+            <div class="card promo2" style="width: 18rem;">
+              <img src="../assets/playaMiami.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Miami</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Desayuno incluido</li>
+                <li class="list-group-item">Salidas a partir de Enero</li>
+                <li class="list-group-item">$620000</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Comprar</a>
+                <a href="#" class="card-link">Reservar</a>
+              </div>
+            </div>
+            <div class="card promo3" style="width: 18rem;">
+              <img src="../assets/imgRio.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rio de Janeiro</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">All inclusive</li>
+                <li class="list-group-item">Vuelta en crucero</li>
+                <li class="list-group-item">$400000</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Comprar</a>
+                <a href="#" class="card-link">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <H2>RECORDA</H2>
+          <ol>
+            <li>Todos los medios de pago</li>
+            <li>Seguros no incluidos en el precio</li>
+            <li>Salidas desde Noviembre 2021</li>
+          </ol>   
+        <H3>Buscar Vuelos</H3>     
+         <form class="">
+             <label for="Destino">Destino</label>
+             <select name="" id="">
+             <option value="">playas Del Carmen</option>
+             <option value="">Santiago de Chile</option>
+             <option value="">Buenos Aires</option>
+             <option value="">Cuba</option>
+             <option value="">Rio de Janeiro</option>
+             <option value="">Barcelona</option>
+             </select>
+             <label for="Pasajeros">Pasajeros</label>
+             <select name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              </select>
+             <label for="">Fecha de ida</label>
+             <input type="date">
+             <label for="">Fecha de vuelta</label>
+             <input type="date">
+             <input type="button" value="Buscar">
+         </form> <br><br>
+    </section>
+
+    <footer class="footer" >
+        <div class="footer__caja">
+            <img class="footer__img" src="../assets/facebook.png" alt="">
+            
+            </div>
+          <div class="footer__caja">
+            <img class="footer__img" src="../assets/instagram.png" alt="">
+            
+           </div>
+          <div class="footer__caja">
+            <img class="footer__img" src="../assets/youtube.png" alt="">
+            
+           </div>
+      
+     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    
+</body>
+</html>

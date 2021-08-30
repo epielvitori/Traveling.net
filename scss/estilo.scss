@@ -1,0 +1,161 @@
+$colorTitulo: rgba(11, 125, 160, 0.863);
+$tituloFont:'Raleway', serif ;
+$contenidoFont:'Raleway', sans-serif ; 
+$colorFondo: #f8f9fa;
+$colorTexto: rgba(0, 0, 0, 0.836);
+
+
+h1{
+    color: rgba(0, 0, 0, 0.836);
+    font-style: italic;
+    font-family:$contenidoFont;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.w-100{
+    height: 600px;
+    width: 600px;
+}
+
+h2{
+    color: $colorTitulo;
+    font-style: italic;
+    font-family: $contenidoFont;
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    ;
+  }
+
+
+.inicio{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: carta1 carta2 carta3;
+
+    .inicio__carta1{
+        background-color: rgb(160, 222, 238);
+        transition: all 2s;
+    }
+       
+    .inicio__carta2{
+        background-color: rgb(160, 222, 238);
+    }
+    .inicio__carta3{
+        background-color: rgb(160, 222, 238);
+    }
+}
+
+.escala:hover{
+    transform: scale(0.9,0.9)
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    background-color: rgb(168, 166, 166);
+  padding-bottom: 20px;
+
+    .footer__caja{
+        
+       
+        .footer__img{
+            width: 60px;
+            height: 60px; 
+            display: flex;
+            align-items: center;
+        }
+    
+
+    }
+}
+
+
+
+.info{
+   
+    background-image:url(../assets/fonfoNosotrso.jpg);
+    background-attachment: fixed;
+    
+    .info__empresa{
+        width: 85%;
+        max-width: 850px;
+        margin:0 auto; 
+    }
+    .info__contacto__form{
+        margin-left: 500px;
+    }
+} 
+
+.pasaporte{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: box1 box2;
+
+    .pasaporte__imgPasaporte{
+        width: 500px;
+        height: 600px;
+    }
+}
+
+
+.inSesion{
+    background-color: $colorFondo;
+}
+.iniciarSesion{
+  
+   display: grid;
+   grid-template-columns:auto auto;
+   grid-template-rows: auto;
+   grid-template-areas: box1 box2;
+    
+}
+
+
+.enlace{
+    .enlace__contraseña{
+        background-color: rgb(160, 222, 238);;
+    }
+    .enlace__instagram{
+        background-color: rgb(160, 222, 238);;
+    }
+}
+
+.paquetes{
+    background-image: url(../assets/fondoPaquete.jpg);
+    background-attachment: fixed;
+}
+
+.tablaPaquetes{
+    background-color:$colorFondo;
+    margin-left: 490px;
+    border: solid 1px black ;
+    .tablaPaquetes__nombre{
+        border: solid 1px black ;
+    }
+    .tablaPaquetes__lugar{
+        border: solid 1px black ; 
+    }
+    .tablaPaquetes__info{
+        border: solid 1px black ; 
+    }
+}
+
+.promos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: promo1 promo2 promo3;
+}

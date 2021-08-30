@@ -1,0 +1,109 @@
+@charset "UTF-8";
+h1 {
+  color: rgba(0, 0, 0, 0.836);
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.w-100 {
+  height: 600px;
+  width: 600px; }
+
+h2 {
+  color: rgba(11, 125, 160, 0.863);
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.inicio {
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: carta1 carta2 carta3; }
+  .inicio .inicio__carta1 {
+    background-color: #a0deee;
+    transition: all 2s; }
+  .inicio .inicio__carta2 {
+    background-color: #a0deee; }
+  .inicio .inicio__carta3 {
+    background-color: #a0deee; }
+
+.escala:hover {
+  transform: scale(0.9, 0.9); }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  background-color: #a8a6a6;
+  padding-bottom: 20px; }
+  .footer .footer__caja .footer__img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center; }
+
+.info {
+  background-image: url(../assets/fonfoNosotrso.jpg);
+  background-attachment: fixed; }
+  .info .info__empresa {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto; }
+  .info .info__contacto__form {
+    margin-left: 500px; }
+
+.pasaporte {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: box1 box2; }
+  .pasaporte .pasaporte__imgPasaporte {
+    width: 500px;
+    height: 600px; }
+
+.inSesion {
+  background-color: #f8f9fa; }
+
+.iniciarSesion {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: box1 box2; }
+
+.enlace .enlace__contraseña {
+  background-color: #a0deee; }
+
+.enlace .enlace__instagram {
+  background-color: #a0deee; }
+
+.paquetes {
+  background-image: url(../assets/fondoPaquete.jpg);
+  background-attachment: fixed; }
+
+.tablaPaquetes {
+  background-color: #f8f9fa;
+  margin-left: 490px;
+  border: solid 1px black; }
+  .tablaPaquetes .tablaPaquetes__nombre {
+    border: solid 1px black; }
+  .tablaPaquetes .tablaPaquetes__lugar {
+    border: solid 1px black; }
+  .tablaPaquetes .tablaPaquetes__info {
+    border: solid 1px black; }
+
+.promos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: promo1 promo2 promo3; }
